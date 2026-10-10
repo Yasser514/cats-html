@@ -1,0 +1,40 @@
+ .gallery {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 40px; /* Large gap between images */
+	max-width: 1600px;
+	margin: 0 auto;
+	padding: 40px 20px;
+}
+
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+.gallery img:hover {
+	transform: scale(1.05);
+}
+
+/* Responsive layout for mobile */
+@media (max-width: 480px) {
+	.gallery {
+		gap: 25px;
+		padding: 25px 15px;
+	}
+
+	.gallery img {
+		width: 100%;
+		max-width: 350px;
+		height: 240px;
+	}
+}
